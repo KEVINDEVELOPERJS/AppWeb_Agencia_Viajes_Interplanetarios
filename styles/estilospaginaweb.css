@@ -15,13 +15,13 @@ nav {
 }
 
 nav a {
-    color: #fff;
+    color: antiquewhite;
     text-decoration: none;
     word-spacing: 80px;
 }
 
 nav p {
-    color: #fff;
+    color: antiquewhite;
     padding: 1em;
     text-decoration: none;
     display: inline-block;
@@ -32,11 +32,11 @@ h1 {
 }
 
 h2 {
-    color: rgba(250, 249, 215, 0.801);
+    color: antiquewhite;
     text-align: center;
 }
 article{
-    border: 2px solid rgba(250, 249, 215, 0.801);
+    border: 2px solid rgba(250, 249, 215, 0.74);
     margin-top: 0,5em;
     padding: 0,5em;
 }
