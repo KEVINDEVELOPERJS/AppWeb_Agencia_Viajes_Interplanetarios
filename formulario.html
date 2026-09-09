@@ -5,17 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservas</title>
-     <style>
+    <style>
         body {
             background-image: url('/img/formulario-background.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
-            margin:0; 
+            margin: 0;
+            color: antiquewhite;
+        }
 
+        button {
+            border-radius: 1cqmin;
+        }
 
-        
+        input {
+            border-radius: 1cqmin;
         }
     </style>
 </head>
@@ -23,9 +29,7 @@
 <body>
 
     <h1>Reserva tu viaje interplanetario</h1>
-
-    <a href="index.html">Ir a inicio</a>
-
+    <button><a href="index.html">Ir a inicio</a></button>
     <form action="index.html">
 
         <label for="">Digite su nombre</label>
@@ -82,11 +86,11 @@
         <input type="submit" value="Reservar viaje">
 
     </form>
-    
 
-<p id="mensaje"></p>
 
-<script src="js/script.js"></script>
+    <p id="mensaje"></p>
+
+    <script src="js/script.js"></script>
 
 </body>
 

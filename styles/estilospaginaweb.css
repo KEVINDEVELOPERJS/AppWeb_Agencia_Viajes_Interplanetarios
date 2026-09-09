@@ -43,7 +43,11 @@ section {
 
 body {
     background-image: url('/img/sistema-solar-e1564771413564.jpg');
-    background-size: 1280px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
 }
 
 a:hover {
@@ -52,11 +56,13 @@ a:hover {
 
 footer {
     color: antiquewhite;
+    margin-top: 440px;
 }
 
 button {
     background-color: rgb(0, 92, 153);
     border: 10px;
+    border-radius: 1cqmin;
 }
 
 input {
