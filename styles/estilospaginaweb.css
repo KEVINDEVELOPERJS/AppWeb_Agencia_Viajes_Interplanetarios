@@ -1,29 +1,24 @@
 * {
     margin: 0;
-}
-
-
-
-body {
+    orientation: center;
+    text-align: center;
     font-family: sans-serif;
+    text-decoration: none;
     font-size: 20px;
 }
 
 nav {
     background-color: transparent;
-    text-align: center;
 }
 
 nav a {
     color: antiquewhite;
-    text-decoration: none;
     word-spacing: 80px;
 }
 
 nav p {
     color: antiquewhite;
     padding: 1em;
-    text-decoration: none;
     display: inline-block;
 }
 
@@ -33,10 +28,10 @@ h1 {
 
 h2 {
     color: antiquewhite;
-    text-align: center;
 }
-article{
+
+article {
     border: 2px solid rgba(250, 249, 215, 0.74);
-    margin-top: 0,5em;
-    padding: 0,5em;
+    margin-top: 0, 5em;
+    padding: 0, 5em;
 }
