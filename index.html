@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agencia De Viajes Interplanetarios</title>
     <link rel="stylesheet" href="/styles/estilospaginaweb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
-    <nav>
+    <h1>
         <p>Bienvenido a la agencia de viajes Interplanetarios - Donde conocera destinos mas alla de la tierra</p>
-    </nav>
+    </h1>
     <section>
-        <h2>Destinos Disponibles</h2>
-        <nav>
-            <a href="/destinos/mercurio.html">mercurio </a>
-            <a href="/destinos/venus.html">venus </a>
-            <a href="/destinos/tierra.html">tierra </a>
-            <a href="/destinos/marte.html">marte </a>
-            <a href="/destinos/jupiter.html">jupiter </a>
-            <a href="/destinos/saturno.html">saturno </a>
-            <a href="/destinos/urano.html">urano </a>
-            <a href="/destinos/neptuno.html">neptuno </a>
-        </nav>
+        <header class="header">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                <i class="fa-solid fa-moon" id="theme-icon"></i>
+            </button>
+            <i class="fa-solid fa-bars" id="menu-btn"></i>
+            <nav class="nav" id="nav">
+                <a href="/destinos/mercurio.html">Mercurio</a>
+                <a href="/destinos/venus.html">Venus</a>
+                <a href="/destinos/tierra.html">Tierra</a>
+                <a href="/destinos/marte.html">Marte</a>
+                <a href="/destinos/jupiter.html">Júpiter</a>
+                <a href="/destinos/saturno.html">Saturno</a>
+                <a href="/destinos/urano.html">Urano</a>
+                <a href="/destinos/neptuno.html">Neptuno</a>
+            </nav>
+        </header>
     </section>
     <button><a href="formulario.html"> RESERVAR TU VIAJE </a></button>
+    <script src="/js/menuinteractivo.js"></script>
+    <script src="/js/modo_oscuro_claro.js"></script>
 </body>
 <footer>
     <p>!!Aprovecha¡¡ - destinos que solo puedes ver una vez en tu vida literalmente</p>
