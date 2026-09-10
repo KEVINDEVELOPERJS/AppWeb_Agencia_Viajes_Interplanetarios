@@ -4,57 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservas</title>
-     <style>
-        body {
-            background-image: url('img/formulario-background.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            margin: 0; 
-            padding: 20px;
-            color: #ffffff;
-        }
-        input, select {
-            padding: 6px;
-            border-radius: 4px;
-            border: none;
-            margin: 4px 0;
-        }
-        input[type="submit"] {
-            background-color: #ec3a0e;
-            color: white;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #f04714;
-        }
-        a {
-            color: #90caf9;
-        }
-        #mensaje {
-            margin-top: 20px;
-            padding: 15px;
-            background-color: rgba(9, 238, 20, 0.8);
-            color: white;
-            border-radius: 8px;
-            font-weight: bold;
-            display: none;
-        }
-        #precioTotal {
-            font-size: 25px;
-            font-weight: bold;
-            color: #241a0b;
-            margin: 12px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/estilospaginaweb.css">
 </head>
 <body>
     <h1>Reserva tu viaje interplanetario</h1>
-    <a href="index.html">Ir a inicio</a>
-
+    <a href="index.html" class="boton">Ir a inicio</a>
     <form id="formulario">
         <label>Digite su nombre</label>
         <input type="text" id="nombre">
@@ -89,15 +43,12 @@
         <label>Seleccione la fecha del viaje</label>
         <input type="date" id="fecha">
         <br><br>
-
         <div id="precioTotal">Precio total: $0</div>
         <br>
-
         <input type="submit" value="Reservar viaje">
     </form>
-     
+    
     <p id="mensaje"></p>
-
     <script src="js/script.js"></script>
 </body>
 </html>

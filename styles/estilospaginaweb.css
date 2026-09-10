@@ -25,6 +25,8 @@ nav a {
     word-spacing: 80px;
     padding: 10px;
     border-radius: 3cqmin;
+    font-family: "Times New Roman", Times, serif;
+     font-style: italic;
     
 }
 
@@ -45,6 +47,8 @@ h2 {
     background-position: center;
     display: block;
     margin: 45px auto 0 auto;
+    font-family: "Times New Roman", Times, serif;
+     font-style: italic;
 }
 
 article {
@@ -65,6 +69,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     margin: 0;
+    
 }
 
 a:hover {
@@ -74,6 +79,8 @@ a:hover {
 footer {
     color: antiquewhite;
     margin-top: 300px;
+    font-family: "Times New Roman", Times, serif;
+     font-style: italic;
 }
 
 button {
@@ -86,10 +93,88 @@ button {
     margin: 45px auto 0 auto; 
     padding: 20px;
     border-radius: 23cqmin;
+    font-family: "Times New Roman", Times, serif;
+     font-style: italic;
     
 }
 
 input {
     color: black;
+    
 }
 
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  margin-left: -1190px; 
+}
+
+.boton:hover {
+  background-color: #45a049;
+}
+
+body {
+    background-image: url('../img/formulario-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0; 
+    padding: 20px;
+    color: #ffffff;
+}
+body.pagina-inicio {
+    background-image: url('../img/sistema-solar-e1564771413564.jpg');
+    background-size: cover;     
+    background-position: center;   
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 20px;
+    color: #ffffff;
+}
+input, select {
+    padding: 6px;
+    border-radius: 4px;
+    border: none;
+    margin: 4px 0;
+}
+
+input[type="submit"] {
+    background-color: #ec3a0e;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #f04714;
+}
+
+a {
+    color: #90caf9;
+}
+
+#mensaje {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(9, 238, 20, 0.8);
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    display: none;
+}
+
+#precioTotal {
+    font-size: 25px;
+    font-weight: bold;
+    color: #241a0b;
+    margin: 12px 0;
+}
