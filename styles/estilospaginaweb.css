@@ -40,6 +40,12 @@ body {
 body.pagina-inicio {
     background-image: url('../img/sistema-solar-e1564771413564.jpg');
 }
+ 
+
+body.pagina-formulario {
+    background-image: url('../img/formulario-background.jpg');
+}
+ 
 
 
 .header {
@@ -184,7 +190,7 @@ input[type="submit"]:hover {
 #precioTotal {
     font-size: 25px;
     font-weight: bold;
-    color: #241a0b;
+    color: #000000;
     margin: 12px 0;
 }
 
