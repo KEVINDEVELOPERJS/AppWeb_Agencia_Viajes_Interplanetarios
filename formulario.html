@@ -43,13 +43,19 @@
             font-weight: bold;
             display: none;
         }
+        #precioTotal {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffd700;
+            margin: 12px 0;
+        }
     </style>
 </head>
 <body>
     <h1>Reserva tu viaje interplanetario</h1>
     <a href="index.html">Ir a inicio</a>
 
-<form id="formulario">
+    <form id="formulario">
         <label>Digite su nombre</label>
         <input type="text" id="nombre">
         <br><br>
@@ -83,11 +89,18 @@
         <label>Seleccione la fecha del viaje</label>
         <input type="date" id="fecha">
         <br><br>
+
+        <!-- ✅ Recuadro donde aparece el precio calculado -->
+        <div id="precioTotal">💰 Precio total: $0</div>
+        <br>
+
         <input type="submit" value="Reservar viaje">
     </form>
      
+    <!-- Aquí aparecerá el mensaje de confirmación -->
     <p id="mensaje"></p>
 
-<script src="js/script.js"></script>
+    <!-- ✅ Conecta con tu JavaScript separado -->
+    <script src="js/script.js"></script>
 </body>
 </html>
