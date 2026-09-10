@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservas</title>
-    <style>
+     <style>
         body {
             background-image: url('img/formulario-background.jpg');
             background-size: cover;
@@ -48,8 +48,8 @@
 <body>
     <h1>Reserva tu viaje interplanetario</h1>
     <a href="index.html">Ir a inicio</a>
-    
-    <form id="formularioReserva">
+
+    <form id="formulario">
         <label>Digite su nombre</label>
         <input type="text" id="nombre">
         <br><br>
@@ -87,37 +87,8 @@
     </form>
      
     <p id="mensaje"></p>
-    <script>
-        const formulario = document.getElementById('formularioReserva');
-        const mensaje = document.getElementById('mensaje');
-        formulario.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const nombre = document.getElementById('nombre').value.trim();
-            const identificacion = document.getElementById('identificacion').value.trim();
-            const correo = document.getElementById('correo').value.trim();
-            const fecha = document.getElementById('fecha').value;
-            
-            if (nombre === "") {
-                alert("⚠️ Por favor escribe tu nombre.");
-                return;
-            }
-            if (identificacion === "") {
-                alert("⚠️ Por favor escribe tu identificación.");
-                return;
-            }
-            if (correo === "" || !correo.includes('@')) {
-                alert("⚠️ Por favor escribe un correo válido con @.");
-                return;
-            }
-            if (fecha === "") {
-                alert("⚠️ Por favor selecciona la fecha del viaje.");
-                return;
-            }
-            
-            mensaje.style.display = "block";
-            mensaje.innerHTML = "✅ ¡Reserva exitosa! 🚀<br>Tu solicitud ha sido recibida.";
-            formulario.reset();
-        });
-    </script>
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>
