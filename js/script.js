@@ -3,7 +3,6 @@ const destino = document.getElementById("destino");
 const viajeros = document.getElementById("viajeros");
 const precioTotal = document.getElementById("precioTotal");
 
-// ✅ FUNCIÓN: CALCULAR PRECIO TOTAL
 function calcularPrecio() {
     let precioPorPersona = 0;
 
@@ -19,15 +18,15 @@ function calcularPrecio() {
     const cantidad = parseInt(viajeros.value);
     const total = precioPorPersona * cantidad;
 
-    precioTotal.textContent = "💰 Precio total: $" + total;
+    precioTotal.textContent = " Precio total: $" + total;
     return total;
 }
 
-// ✅ Se actualiza el precio al cambiar destino o cantidad
+
 destino.addEventListener("change", calcularPrecio);
 viajeros.addEventListener("change", calcularPrecio);
 
-// ✅ AL RESERVAR: VALIDAR + MOSTRAR PRECIO EN EL MENSAJE
+
 formulario.addEventListener("submit", function(event) {
     event.preventDefault();
 
@@ -37,7 +36,6 @@ formulario.addEventListener("submit", function(event) {
     const fecha = document.getElementById("fecha").value;
     const mensaje = document.getElementById("mensaje");
 
-    // ⚠️ Validar que todos los campos estén llenos
     if (nombre === "" ||
         identificacion === "" ||
         correo === "" ||
@@ -49,11 +47,11 @@ formulario.addEventListener("submit", function(event) {
         mensaje.textContent = "Por favor complete todos los campos.";
 
     } else {
-        // ✅ Todo correcto → Mostrar mensaje CON EL PRECIO TOTAL
+
         const totalPrecio = calcularPrecio();
         mensaje.style.display = "block";
-        mensaje.textContent = "✅ Reserva realizada. Total a pagar: $" + totalPrecio + ". ¡Buen viaje! 🚀";
+        mensaje.textContent = "Reserva realizada. Total a pagar: $" + totalPrecio + ". ¡Buen viaje! ";
         formulario.reset();
-        precioTotal.textContent = "💰 Precio total: $0";
+        precioTotal.textContent = " Precio total: $0";
     }
 });
