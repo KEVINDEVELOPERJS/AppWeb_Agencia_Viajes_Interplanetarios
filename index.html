@@ -5,16 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agencia De Viajes Interplanetarios</title>
     <link rel="stylesheet" href="styles/estilospaginaweb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body class="pagina-inicio">
     
+    <header class="header">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+            <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+        <i class="fa-solid fa-bars" id="menu-btn"></i>
+    </header>
+
     <nav>
         <p>Bienvenido a la agencia de viajes Interplanetarios - Donde conocerá destinos más allá de la Tierra</p>
     </nav>
 
     <section>
         <h2>Destinos Disponibles</h2>
-        <nav>
+        <nav class="nav" id="nav">
             <a href="destinos/mercurio.html">Mercurio</a>
             <a href="destinos/venus.html">Venus</a>
             <a href="destinos/tierra.html">Tierra</a>
@@ -28,6 +36,8 @@
 
     <button class="boton-reserva"><a href="formulario.html">RESERVAR TU VIAJE</a></button>
 
+    <script src="js/menuinteractivo.js"></script>
+    <script src="js/modo_oscuro_claro.js"></script>
 </body>
 <footer>
     <p>¡Aprovecha! - Destinos que solo puedes ver una vez en tu vida, literalmente</p>
