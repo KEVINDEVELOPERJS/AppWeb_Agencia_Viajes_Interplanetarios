@@ -7,19 +7,32 @@
     font-size: 20px;
 }
 
+
 nav {
-    background-color: #0e74d4;
+    color: #9abee0;
+    border: 30px;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 15px auto 0 auto; 
+    padding: 10px;
+    border-radius: 10cqmin;
 }
 
 nav a {
-    color: antiquewhite;
+    background-color: rgb(29, 141, 206);
     word-spacing: 80px;
+    padding: 10px;
+    border-radius: 3cqmin;
+    
 }
 
 nav p {
     color: antiquewhite;
     padding: 1em;
     display: inline-block;
+    
 }
 
 h1 {
@@ -28,6 +41,10 @@ h1 {
 
 h2 {
     color: antiquewhite;
+    border: 30px;
+    background-position: center;
+    display: block;
+    margin: 45px auto 0 auto;
 }
 
 article {
@@ -56,11 +73,11 @@ a:hover {
 
 footer {
     color: antiquewhite;
-    margin-top: 440px;
+    margin-top: 300px;
 }
 
 button {
-    background-color: rgb(233, 200, 11);
+    background-color: rgb(48, 233, 11);
     border: 30px;
     background-position: center;
     background-attachment: fixed;
@@ -75,3 +92,4 @@ button {
 input {
     color: black;
 }
+
